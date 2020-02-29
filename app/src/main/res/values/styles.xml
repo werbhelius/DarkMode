@@ -14,7 +14,7 @@
     </style>
 
     <style name="MyOverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
-        <item name="android:tint">@color/colorOnSurface</item>
+        <item name="android:tint">@color/colorOnPrimary</item>
     </style>
 
 </resources>
