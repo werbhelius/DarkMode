@@ -19,8 +19,8 @@
         android:title="Dark" />
 
     <item
-        android:id="@+id/menu_battery_saver"
+        android:id="@+id/system"
         app:showAsAction="never"
-        android:title="Battery Save" />
+        android:title="System" />
 
 </menu>
