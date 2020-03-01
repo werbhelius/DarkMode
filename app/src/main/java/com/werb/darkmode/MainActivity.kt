@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private val adapter = EventAdapter()
+    private val manager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +22,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun makeUI() {
         binding.toolbar.inflateMenu(R.menu.main_menu)
-        binding.list.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
+        manager.gapStrategy = StaggeredGridLayoutManager.GAP_HANDLING_NONE
+        binding.list.layoutManager = manager
         binding.list.addItemDecoration(GridSpacingItemDecoration(2, 16))
         binding.list.adapter = adapter
         binding.list.setHasFixedSize(true)
