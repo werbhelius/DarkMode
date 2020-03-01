@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun makeUI() {
         binding.toolbar.inflateMenu(R.menu.main_menu)
-        manager.gapStrategy = StaggeredGridLayoutManager.GAP_HANDLING_NONE
         binding.list.layoutManager = manager
         binding.list.addItemDecoration(GridSpacingItemDecoration(2, 16))
         binding.list.adapter = adapter
