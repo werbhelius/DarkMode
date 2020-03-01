@@ -23,13 +23,13 @@ class LineChartView: View {
     )
 
     private val bgPaint: Paint = Paint().also {
-        it.color = ColorUtils.setAlphaComponent(resources.getColor(R.color.colorPrimaryDark), 30)
+        it.color = ColorUtils.setAlphaComponent(resources.getColor(R.color.colorPrimary), 30)
         it.strokeWidth = 4.5f
         it.isAntiAlias = true
     }
 
     private val linePaint = Paint().also {
-        it.color = resources.getColor(R.color.colorPrimaryDark)
+        it.color = resources.getColor(R.color.colorPrimary)
         it.strokeWidth = 4.5f
         it.isAntiAlias = true
     }

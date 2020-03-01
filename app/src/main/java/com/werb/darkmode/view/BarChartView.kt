@@ -25,7 +25,7 @@ class BarChartView: View {
     private val path = Path()
 
     private val linePaint = Paint().apply {
-        color = resources.getColor(R.color.colorPrimaryDark)
+        color = resources.getColor(R.color.colorPrimary)
         strokeWidth = 4.5f
         isAntiAlias = true
     }
