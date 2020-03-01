@@ -62,13 +62,24 @@
                 tools:text="+12.3% of target" />
 
             <com.werb.darkmode.view.LineChartView
+                android:id="@+id/lineChart"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_marginTop="8dp"
+                app:goneIf="@{!event.showLineChart}"
                 app:layout_constraintDimensionRatio="h,2:1"
                 app:layout_constraintTop_toBottomOf="@id/desc"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
+
+            <com.werb.darkmode.view.BarChartView
+                android:id="@+id/barChart"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:goneIf="@{!event.showBarChart}"
+                app:layout_constraintTop_toBottomOf="@id/lineChart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintDimensionRatio="h,2:1" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

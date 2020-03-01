@@ -23,14 +23,14 @@ class LineChartView: View {
     )
 
     private val bgPaint: Paint = Paint().also {
-        it.color = ColorUtils.setAlphaComponent(resources.getColor(R.color.colorPrimary), 30)
-        it.strokeWidth = 4f
+        it.color = ColorUtils.setAlphaComponent(resources.getColor(R.color.colorPrimaryDark), 30)
+        it.strokeWidth = 4.5f
         it.isAntiAlias = true
     }
 
     private val linePaint = Paint().also {
-        it.color = resources.getColor(R.color.colorPrimary)
-        it.strokeWidth = 4f
+        it.color = resources.getColor(R.color.colorPrimaryDark)
+        it.strokeWidth = 4.5f
         it.isAntiAlias = true
     }
 
@@ -43,13 +43,13 @@ class LineChartView: View {
 
         canvas?.drawLine(width * 0.10f, height * 0.75f, width * 0.12f, height * 0.55f, bgPaint)
 
-        canvas?.drawLine(width * 0.12f, height * 0.55f, width * 0.17f, height * 0.70f, bgPaint)
+        canvas?.drawLine(width * 0.12f, height * 0.55f, width * 0.17f, height * 0.75f, bgPaint)
 
-        canvas?.drawLine(width * 0.17f, height * 0.70f, width * 0.22f, height * 0.71f, bgPaint)
+        canvas?.drawLine(width * 0.17f, height * 0.75f, width * 0.22f, height * 0.71f, bgPaint)
 
-        canvas?.drawLine(width * 0.22f, height * 0.71f, width * 0.24f, height * 0.8f, bgPaint)
+        canvas?.drawLine(width * 0.22f, height * 0.71f, width * 0.24f, height * 0.90f, bgPaint)
 
-        canvas?.drawLine(width * 0.24f, height * 0.8f, width * 0.28f, height * 0.7f, bgPaint)
+        canvas?.drawLine(width * 0.24f, height * 0.90f, width * 0.28f, height * 0.7f, bgPaint)
 
         canvas?.drawLine(width * 0.28f, height * 0.7f, width * 0.32f, height * 0.71f, bgPaint)
 
@@ -83,13 +83,13 @@ class LineChartView: View {
 
         canvas?.drawLine(width * 0.10f, height * 0.75f, width * 0.12f, height * 0.55f, linePaint)
 
-        canvas?.drawLine(width * 0.12f, height * 0.55f, width * 0.17f, height * 0.70f, linePaint)
+        canvas?.drawLine(width * 0.12f, height * 0.55f, width * 0.17f, height * 0.75f, linePaint)
 
-        canvas?.drawLine(width * 0.17f, height * 0.70f, width * 0.22f, height * 0.71f, linePaint)
+        canvas?.drawLine(width * 0.17f, height * 0.75f, width * 0.22f, height * 0.71f, linePaint)
 
-        canvas?.drawLine(width * 0.22f, height * 0.71f, width * 0.24f, height * 0.8f, linePaint)
+        canvas?.drawLine(width * 0.22f, height * 0.71f, width * 0.24f, height * 0.90f, linePaint)
 
-        canvas?.drawLine(width * 0.24f, height * 0.8f, width * 0.28f, height * 0.7f, linePaint)
+        canvas?.drawLine(width * 0.24f, height * 0.90f, width * 0.28f, height * 0.7f, linePaint)
 
         canvas?.drawLine(width * 0.28f, height * 0.7f, width * 0.32f, height * 0.71f, linePaint)
 
