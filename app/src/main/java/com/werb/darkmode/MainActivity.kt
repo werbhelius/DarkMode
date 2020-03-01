@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         binding.list.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
         binding.list.addItemDecoration(GridSpacingItemDecoration(2, 16))
         binding.list.adapter = adapter
+        binding.list.setHasFixedSize(true)
 
         EventStore.events.observe(this) {
             adapter.submitList(it)
