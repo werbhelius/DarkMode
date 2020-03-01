@@ -9,6 +9,7 @@ data class Event(val title: String, val data: String, val desc: String = "") {
 
     var isShowLineChart: Boolean = false
     var isShowBarChart: Boolean = false
+    var isError = false
 
 }
 

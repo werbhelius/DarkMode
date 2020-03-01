@@ -15,6 +15,7 @@ object EventStore {
         Event("Sales", "345.8M", "+11% of target"),
         Event("User", "45.5M"),
         Event("Avg.session", "4:53 H", "+56.6% of target").apply { isShowLineChart = true },
+        Event("Error", "N/A", "No data available").apply { isError = true },
         Event("Sessions", "23,242").apply { isShowBarChart = true },
         Event("Bounce rate", "12%"),
         Event("PageViews", "36"),

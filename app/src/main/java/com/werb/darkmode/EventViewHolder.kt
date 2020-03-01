@@ -11,6 +11,17 @@ class EventViewHolder(private val binding: LayoutItemBinding): RecyclerView.View
 
     fun bind(event: Event) {
         binding.event = event
+        if (event.isError) {
+            binding.cardView.setCardBackgroundColor(binding.root.resources.getColor(R.color.colorError))
+            binding.data.setTextColor(binding.root.resources.getColor(R.color.colorOnError))
+            binding.desc.setTextColor(binding.root.resources.getColor(R.color.colorOnError))
+            binding.title.setTextColor(binding.root.resources.getColor(R.color.colorOnError))
+        } else {
+            binding.cardView.setCardBackgroundColor(binding.root.resources.getColor(R.color.colorSurface))
+            binding.data.setTextColor(binding.root.resources.getColor(R.color.colorOnSurface))
+            binding.desc.setTextColor(binding.root.resources.getColor(R.color.colorOnSurface))
+            binding.title.setTextColor(binding.root.resources.getColor(R.color.colorOnSurface))
+        }
     }
 
 }
