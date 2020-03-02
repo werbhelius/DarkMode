@@ -8,6 +8,7 @@ import android.util.AttributeSet
 import android.view.View
 import androidx.core.graphics.ColorUtils
 import com.werb.darkmode.R
+import com.werb.darkmode.utils.getColorFromAttr
 
 /**
  * Created by wanbo on 2020/2/29.
@@ -23,13 +24,13 @@ class LineChartView: View {
     )
 
     private val bgPaint: Paint = Paint().also {
-        it.color = ColorUtils.setAlphaComponent(resources.getColor(R.color.colorPrimary), 30)
+        it.color = ColorUtils.setAlphaComponent(context.getColorFromAttr(R.attr.colorPrimary), 30)
         it.strokeWidth = 4.5f
         it.isAntiAlias = true
     }
 
     private val linePaint = Paint().also {
-        it.color = resources.getColor(R.color.colorPrimary)
+        it.color = context.getColorFromAttr(R.attr.colorPrimary)
         it.strokeWidth = 4.5f
         it.isAntiAlias = true
     }

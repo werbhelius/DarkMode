@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
-    <color name="colorToolbar">#6200EE</color>
-    <color name="colorError">#B00020</color>
-    <color name="colorSurface">#FFFFFF</color>
-    <color name="colorBackground">#FFFFFF</color>
-    <color name="colorOnSurface">#000000</color>
-    <color name="colorOnPrimary">#FFFFFF</color>
-    <color name="colorOnError">#FFFFFF</color>
+
+    <!--Color palette-->
+    <color name="color_FFFFFF">#ffffff</color>
+
+    <color name="color_121212">#121212</color>
+    <color name="color_000000">#000000</color>
+    
+    <color name="color_6200EE">#6200ee</color>
+    <color name="color_3700B3">#3700B3</color>
+    <color name="color_03DAC6">#03DAC6</color>
+    <color name="color_018786">#018786</color>
+    
+    <color name="color_B00020">#B00020</color>
+    <color name="color_CF6679">#CF6679</color>
+
+
+
+
 </resources>

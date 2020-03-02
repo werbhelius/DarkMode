@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.App.DayNight" parent="Theme.App.Dark"/>
+
+    <style name="Theme.App.Dark" parent="Theme.App">
+
+        <item name="colorPrimary">@color/color_6200EE</item>
+        <item name="colorPrimaryVariant">@color/color_3700B3</item>
+        <item name="colorSecondary">@color/color_03DAC6</item>
+        <item name="colorSecondaryVariant">@color/color_018786</item>
+
+        <item name="android:colorBackground">@color/color_000000</item>
+        <item name="colorSurface">@color/color_121212</item>
+        <item name="colorError">@color/color_CF6679</item>
+
+        <item name="colorOnPrimary">@color/color_FFFFFF</item>
+        <item name="colorOnSecondary">@color/color_000000</item>
+        <item name="colorOnBackground">@color/color_FFFFFF</item>
+        <item name="colorOnSurface">@color/color_FFFFFF</item>
+        <item name="colorOnError">@color/color_FFFFFF</item>
+
+        <!--System/Platform attributes-->
+        <item name="android:statusBarColor">@color/color_121212</item>
+        <item name="android:windowBackground">?android:colorBackground</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+
+    </style>
+
+</resources>

@@ -8,6 +8,7 @@ import android.graphics.RectF
 import android.util.AttributeSet
 import android.view.View
 import com.werb.darkmode.R
+import com.werb.darkmode.utils.getColorFromAttr
 
 /**
  * Created by wanbo on 2020/3/1.
@@ -25,7 +26,7 @@ class BarChartView: View {
     private val path = Path()
 
     private val linePaint = Paint().apply {
-        color = resources.getColor(R.color.colorPrimary)
+        color = context.getColorFromAttr(R.attr.colorPrimary)
         strokeWidth = 4.5f
         isAntiAlias = true
     }
