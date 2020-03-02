@@ -10,6 +10,7 @@
         <item name="colorSecondary">@color/color_03DAC6</item>
         <item name="colorSecondaryVariant">@color/color_018786</item>
 
+        <item name="toolbarColor">@color/color_6200EE</item>
         <item name="android:colorBackground">@color/color_FFFFFF</item>
         <item name="colorSurface">@color/color_FFFFFF</item>
         <item name="colorError">@color/color_B00020</item>
@@ -24,7 +25,13 @@
         <item name="android:statusBarColor">@color/color_3700B3</item>
         <item name="android:windowBackground">?android:colorBackground</item>
         <item name="android:windowLightStatusBar" tools:ignore="NewApi">false</item>
+        <item name="actionOverflowButtonStyle">@style/MyOverflowButtonStyle</item>
 
     </style>
+
+    <style name="MyOverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">?attr/colorOnPrimary</item>
+    </style>
+
 
 </resources>
