@@ -19,8 +19,14 @@
         android:title="Dark" />
 
     <item
+<<<<<<< HEAD
         android:id="@+id/system"
         app:showAsAction="never"
         android:title="System" />
+=======
+        android:id="@+id/menu_battery_saver"
+        app:showAsAction="never"
+        android:title="Battery Saver" />
+>>>>>>> master
 
 </menu>
