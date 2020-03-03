@@ -21,6 +21,6 @@
     <item
         android:id="@+id/system"
         app:showAsAction="never"
-        android:title="System" />
+        android:title="System Default" />
 
 </menu>
